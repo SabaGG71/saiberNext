@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: #775ada;
+  color: #fff;
+}
+body {
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+@layer components {
+  .custom-container {
+    @apply mx-auto xl:max-w-[1150px] 2xl:max-w-[1350px];
+  }
+}
+.logoTicker-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+.integrations-mask {
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
