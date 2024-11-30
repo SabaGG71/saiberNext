@@ -122,7 +122,7 @@ export default function Navbar() {
                     FAQS
                   </Link>
                   <LogIn>Log In</LogIn>
-                  <SignInButton>Log In</SignInButton>
+                  <SignInButton>Sign Up</SignInButton>
                 </div>
               </motion.div>
             )}
